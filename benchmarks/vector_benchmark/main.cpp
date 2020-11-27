@@ -48,10 +48,10 @@ int main(int argc, char** argv) {
     }
     vectors[i] = vec;
   }
-  printf("Running vector benchmark (%s)...\n", MATHFU_BUILD_OPTIONS_STRING);
+  printf("Running vector benchmark (%s)...\n", MATHFU_BUILD_OPTIONS_STRING);//\
   // Start vector performance code. Run a number of loops for more accurate
   // numbers.
-  Timer timer;
+  Timer timer;// comment \
   PERFTEST_2D_VECTOR_LOOP(kIterations, kVectorSize) sum += vectors[j];
   PERFTEST_2D_VECTOR_LOOP(kIterations, kVectorSize) sum -= vectors[j];
   PERFTEST_2D_VECTOR_LOOP(kIterations, kVectorSize) sum *= 0.1f;
